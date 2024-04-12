@@ -1,8 +1,7 @@
 """
 Helper for retrieving Long/Lat from Map Box API.
 """
-
-import requests
+from security import safe_requests
 
 
 SERVICE_ADDRESS = 'https://api.mapbox.com/geocoding/v5/mapbox.places/$search.json'
@@ -24,7 +23,7 @@ def get_coordinates(key: str, address: str) -> dict | None:
         url = SERVICE_ADDRESS.replace('$search', address)
         params = {'access_token': key, 'limit': 1, 'types': 'address'}
 
-        response = requests.get(url, params=params, timeout=60)
+        response = safe_requests.get(url, params=params, timeout=60)
 
         if response.status_code == 200:
             body = response.json()
