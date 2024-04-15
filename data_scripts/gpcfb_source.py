@@ -131,7 +131,7 @@ def main():
     Main Function for Processing
     """
     # Retrieve the GPCFB Sites from the ARC GIS WebServices
-    logging.info(f"RETRIVING FOOD BANK SITES FROM WEB SERVICES...")
+    logging.info("RETRIVING FOOD BANK SITES FROM WEB SERVICES...")
     locations = gis.get_gpcfb_sites()
     schema = load_schema(SCHEMA_FILE)
     logging.info(f"RETRIEVED {len(locations)} ENTRIES TO CONVERT.")

@@ -119,7 +119,7 @@ def main():
     Main Function for Processing
     """
     # Retrieve the Summer Meal Sites from the ARC GIS Web Services
-    logging.info(f"RETRIVING SUMMER MEAL SITES FROM WEB SERVICES...")
+    logging.info("RETRIVING SUMMER MEAL SITES FROM WEB SERVICES...")
     sites = gis.get_summer_meal_sites()
     schema = load_schema(SCHEMA_FILE)
     logging.info(f"RETRIEVED {len(sites)} ENTRIES TO CONVERT.")

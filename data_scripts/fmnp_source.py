@@ -111,7 +111,7 @@ def main():
     Main Function for Processing
     """
     # Retrieve the FMNP Markets from the ARC GIS Web Services
-    logging.info(f"RETRIVING FARMER'S MARKETS FROM WEB SERVICES...")
+    logging.info("RETRIVING FARMER'S MARKETS FROM WEB SERVICES...")
     markets = gis.get_fmnp_markets()
     schema = load_schema(SCHEMA_FILE)
     logging.info(f"RETRIEVED {len(markets)} ENTRIES TO CONVERT.")

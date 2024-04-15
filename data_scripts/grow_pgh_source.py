@@ -111,7 +111,7 @@ def main():
     Main Function for Processing
     """
     # Retrieve the Grow PGH Items from the CSV FILE
-    logging.info(f"LOADING GROW PGH CSV...")
+    logging.info("LOADING GROW PGH CSV...")
     gardens = load_csv(SOURCE)
     schema = load_schema(SCHEMA_FILE)
     logging.info(f"RETRIEVED {len(gardens)} ENTRIES TO CONVERT.")

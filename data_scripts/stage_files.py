@@ -47,7 +47,7 @@ def main():
     
     if os.path.exists(SOURCE_FILE):
         archive_file(OUTPUT_FILE, ARCHIVE_DIRECTORY)
-        logging.info(f"MOVING NEW DATASET FILES INTO PLACE..")
+        logging.info("MOVING NEW DATASET FILES INTO PLACE..")
         shutil.copy(SOURCE_FILE, OUTPUT_FILE)
         shutil.copy(NDJSON_FILE, NDJSON_OUTPUT_FILE)
         

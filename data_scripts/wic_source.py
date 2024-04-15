@@ -117,7 +117,7 @@ def main():
     Main Function for Processing
     """
     # Retrieve the WIC Locations from PA WIC
-    logging.info(f"RETRIVING WIC LOCATIONS FROM PA WIC SERVICES...")
+    logging.info("RETRIVING WIC LOCATIONS FROM PA WIC SERVICES...")
     locations = gis.get_wic_sites()
     schema = load_schema(SCHEMA_FILE)
     logging.info(f"RETRIEVED {len(locations)} ENTRIES TO CONVERT.")

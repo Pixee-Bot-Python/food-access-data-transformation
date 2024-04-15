@@ -132,7 +132,7 @@ def main():
     Main Function for Processing
     """
     # Retrieve the Bridgeway Captial locaations from the Google Sheet
-    logging.info(f"RETRIVING MANUAL SOURCES FROM GOOGLE SHEET...")
+    logging.info("RETRIVING MANUAL SOURCES FROM GOOGLE SHEET...")
     locations = gis.get_google_sheet_csv(
         '1QwWXDMzNc7X-krErCwuzTHgXfiru-U99jJeJ6nk9hko', '693210073')
     schema = load_schema(SCHEMA_FILE)
