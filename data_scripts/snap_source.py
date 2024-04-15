@@ -94,7 +94,7 @@ def main():
     Main Function for Processing
     """
     # Retrieve the SNAP Locations from the ARC GIS Web Services
-    logging.info(f"RETRIEVING SNAP LOCATIONS FROM WEB SERVICES...")
+    logging.info("RETRIEVING SNAP LOCATIONS FROM WEB SERVICES...")
     locations = gis.get_snap_sites()
     schema = load_schema(SCHEMA_FILE)
     logging.info(f"RETRIEVED {len(locations)} ENTRIES TO CONVERT.")

@@ -112,7 +112,7 @@ def main():
     Main Function for Processing
     """
     # Retrieve the Fresh Corners Stores from the Google Sheet
-    logging.info(f"RETRIVING FRESH CORNERS STORES FROM GOOGLE SHEET...")
+    logging.info("RETRIVING FRESH CORNERS STORES FROM GOOGLE SHEET...")
     stores = gis.get_google_sheet_csv(
         '1QwWXDMzNc7X-krErCwuzTHgXfiru-U99jJeJ6nk9hko', '0')
     schema = load_schema(SCHEMA_FILE)
